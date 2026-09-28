@@ -139,11 +139,41 @@ After running the suite, record the measured results here:
 
 ## Top three failure modes
 
-The generated report identifies the most frequently represented adverse conditions in the test suite.
+The evaluation included several situations where the research agent could encounter problems. Three important scenarios were search API failures, invalid citations, and webpage retrieval failures.
 
-These are simulated failure scenarios, not measured production incident frequencies.
+### 1. Search API Failures (TC16–TC18)
 
-See the evaluation report for the detailed analysis.
+**Problem:** The search API might become unavailable or return an error while the agent is researching a question.
+
+**Expected behavior:** The agent should handle the error without crashing or generating an answer without supporting sources.
+
+**Observed behavior:** In the mocked evaluation, the agent handled the simulated search failures and returned an appropriate error when no usable sources were available.
+
+**Limitation:** These tests simulate API failures. They do not measure how frequently the real Tavily API becomes unavailable.
+
+### 2. Invalid Source Citations (TC21)
+
+**Problem:** The language model might generate a citation referring to a source that was never retrieved.
+
+**Expected behavior:** The agent should reject citations that do not correspond to collected sources.
+
+**Observed behavior:** The simulated answer included the invalid citation `[999]`. The agent's citation validator rejected it, and the test passed.
+
+**Limitation:** Citation validation checks whether a source ID exists. It does not independently verify that the cited source supports every factual claim.
+
+### 3. Webpage Retrieval Failures (TC22–TC23)
+
+**Problem:** A webpage might be unavailable, block retrieval, or return empty content.
+
+**Expected behavior:** The agent should handle the retrieval failure and continue using previously collected search results when possible.
+
+**Observed behavior:** In the mocked evaluation, the agent handled both the simulated page-fetch exception and empty page content. It was still able to produce an answer using the available search results.
+
+**Limitation:** Search-result snippets may contain less information than complete webpages, which can affect the detail and reliability of the final answer.
+
+### Summary
+
+All three failure conditions were handled successfully in the reported mocked evaluation. These results demonstrate that the agent's error-handling logic works for the tested scenarios, but they do not establish its reliability under every real-world condition.
 
 ## Limitations
 
