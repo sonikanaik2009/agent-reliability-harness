@@ -1,0 +1,439 @@
+[
+  {
+    "id": "TC01",
+    "name": "Normal research question 1",
+    "question": "Explain research topic 1.",
+    "decisions": [
+      {
+        "action": "search",
+        "query": "research topic 1"
+      },
+      {
+        "action": "answer"
+      }
+    ],
+    "expected": "answer",
+    "scenario": "normal",
+    "final_answer": "This is a source-grounded answer [1]."
+  },
+  {
+    "id": "TC02",
+    "name": "Normal research question 2",
+    "question": "Explain research topic 2.",
+    "decisions": [
+      {
+        "action": "search",
+        "query": "research topic 2"
+      },
+      {
+        "action": "answer"
+      }
+    ],
+    "expected": "answer",
+    "scenario": "normal",
+    "final_answer": "This is a source-grounded answer [1]."
+  },
+  {
+    "id": "TC03",
+    "name": "Normal research question 3",
+    "question": "Explain research topic 3.",
+    "decisions": [
+      {
+        "action": "search",
+        "query": "research topic 3"
+      },
+      {
+        "action": "answer"
+      }
+    ],
+    "expected": "answer",
+    "scenario": "normal",
+    "final_answer": "This is a source-grounded answer [1]."
+  },
+  {
+    "id": "TC04",
+    "name": "Normal research question 4",
+    "question": "Explain research topic 4.",
+    "decisions": [
+      {
+        "action": "search",
+        "query": "research topic 4"
+      },
+      {
+        "action": "answer"
+      }
+    ],
+    "expected": "answer",
+    "scenario": "normal",
+    "final_answer": "This is a source-grounded answer [1]."
+  },
+  {
+    "id": "TC05",
+    "name": "Normal research question 5",
+    "question": "Explain research topic 5.",
+    "decisions": [
+      {
+        "action": "search",
+        "query": "research topic 5"
+      },
+      {
+        "action": "answer"
+      }
+    ],
+    "expected": "answer",
+    "scenario": "normal",
+    "final_answer": "This is a source-grounded answer [1]."
+  },
+  {
+    "id": "TC06",
+    "name": "Normal research question 6",
+    "question": "Explain research topic 6.",
+    "decisions": [
+      {
+        "action": "search",
+        "query": "research topic 6"
+      },
+      {
+        "action": "answer"
+      }
+    ],
+    "expected": "answer",
+    "scenario": "normal",
+    "final_answer": "This is a source-grounded answer [1]."
+  },
+  {
+    "id": "TC07",
+    "name": "Normal research question 7",
+    "question": "Explain research topic 7.",
+    "decisions": [
+      {
+        "action": "search",
+        "query": "research topic 7"
+      },
+      {
+        "action": "answer"
+      }
+    ],
+    "expected": "answer",
+    "scenario": "normal",
+    "final_answer": "This is a source-grounded answer [1]."
+  },
+  {
+    "id": "TC08",
+    "name": "Normal research question 8",
+    "question": "Explain research topic 8.",
+    "decisions": [
+      {
+        "action": "search",
+        "query": "research topic 8"
+      },
+      {
+        "action": "answer"
+      }
+    ],
+    "expected": "answer",
+    "scenario": "normal",
+    "final_answer": "This is a source-grounded answer [1]."
+  },
+  {
+    "id": "TC09",
+    "name": "Research with page fetch 9",
+    "question": "Explain topic 9 in detail.",
+    "decisions": [
+      {
+        "action": "search",
+        "query": "topic 9"
+      },
+      {
+        "action": "fetch",
+        "url": "https://example.com/source-1"
+      },
+      {
+        "action": "answer"
+      }
+    ],
+    "expected": "answer",
+    "scenario": "normal",
+    "final_answer": "This is a source-grounded answer [1]."
+  },
+  {
+    "id": "TC10",
+    "name": "Research with page fetch 10",
+    "question": "Explain topic 10 in detail.",
+    "decisions": [
+      {
+        "action": "search",
+        "query": "topic 10"
+      },
+      {
+        "action": "fetch",
+        "url": "https://example.com/source-1"
+      },
+      {
+        "action": "answer"
+      }
+    ],
+    "expected": "answer",
+    "scenario": "normal",
+    "final_answer": "This is a source-grounded answer [1]."
+  },
+  {
+    "id": "TC11",
+    "name": "Research with page fetch 11",
+    "question": "Explain topic 11 in detail.",
+    "decisions": [
+      {
+        "action": "search",
+        "query": "topic 11"
+      },
+      {
+        "action": "fetch",
+        "url": "https://example.com/source-1"
+      },
+      {
+        "action": "answer"
+      }
+    ],
+    "expected": "answer",
+    "scenario": "normal",
+    "final_answer": "This is a source-grounded answer [1]."
+  },
+  {
+    "id": "TC12",
+    "name": "Research with page fetch 12",
+    "question": "Explain topic 12 in detail.",
+    "decisions": [
+      {
+        "action": "search",
+        "query": "topic 12"
+      },
+      {
+        "action": "fetch",
+        "url": "https://example.com/source-1"
+      },
+      {
+        "action": "answer"
+      }
+    ],
+    "expected": "answer",
+    "scenario": "normal",
+    "final_answer": "This is a source-grounded answer [1]."
+  },
+  {
+    "id": "TC13",
+    "name": "Empty input 13",
+    "question": "",
+    "decisions": [],
+    "expected": "error",
+    "scenario": "empty_input",
+    "final_answer": "This is a source-grounded answer [1]."
+  },
+  {
+    "id": "TC14",
+    "name": "Empty input 14",
+    "question": " ",
+    "decisions": [],
+    "expected": "error",
+    "scenario": "empty_input",
+    "final_answer": "This is a source-grounded answer [1]."
+  },
+  {
+    "id": "TC15",
+    "name": "Empty input 15",
+    "question": "\n\t",
+    "decisions": [],
+    "expected": "error",
+    "scenario": "empty_input",
+    "final_answer": "This is a source-grounded answer [1]."
+  },
+  {
+    "id": "TC16",
+    "name": "Search API failure 16",
+    "question": "Research topic 16.",
+    "decisions": [
+      {
+        "action": "search",
+        "query": "first attempt"
+      },
+      {
+        "action": "search",
+        "query": "second attempt"
+      },
+      {
+        "action": "search",
+        "query": "third attempt"
+      }
+    ],
+    "expected": "error",
+    "scenario": "search_failure",
+    "final_answer": "This is a source-grounded answer [1]."
+  },
+  {
+    "id": "TC17",
+    "name": "Search API failure 17",
+    "question": "Research topic 17.",
+    "decisions": [
+      {
+        "action": "search",
+        "query": "first attempt"
+      },
+      {
+        "action": "search",
+        "query": "second attempt"
+      },
+      {
+        "action": "search",
+        "query": "third attempt"
+      }
+    ],
+    "expected": "error",
+    "scenario": "search_failure",
+    "final_answer": "This is a source-grounded answer [1]."
+  },
+  {
+    "id": "TC18",
+    "name": "Search API failure 18",
+    "question": "Research topic 18.",
+    "decisions": [
+      {
+        "action": "search",
+        "query": "first attempt"
+      },
+      {
+        "action": "search",
+        "query": "second attempt"
+      },
+      {
+        "action": "search",
+        "query": "third attempt"
+      }
+    ],
+    "expected": "error",
+    "scenario": "search_failure",
+    "final_answer": "This is a source-grounded answer [1]."
+  },
+  {
+    "id": "TC19",
+    "name": "No search results 19",
+    "question": "Research obscure topic 19.",
+    "decisions": [
+      {
+        "action": "search",
+        "query": "first attempt"
+      },
+      {
+        "action": "search",
+        "query": "second attempt"
+      },
+      {
+        "action": "search",
+        "query": "third attempt"
+      }
+    ],
+    "expected": "error",
+    "scenario": "empty_search",
+    "final_answer": "This is a source-grounded answer [1]."
+  },
+  {
+    "id": "TC20",
+    "name": "No search results 20",
+    "question": "Research obscure topic 20.",
+    "decisions": [
+      {
+        "action": "search",
+        "query": "first attempt"
+      },
+      {
+        "action": "search",
+        "query": "second attempt"
+      },
+      {
+        "action": "search",
+        "query": "third attempt"
+      }
+    ],
+    "expected": "error",
+    "scenario": "empty_search",
+    "final_answer": "This is a source-grounded answer [1]."
+  },
+  {
+    "id": "TC21",
+    "name": "Invalid citation number",
+    "question": "Explain a topic.",
+    "decisions": [
+      {
+        "action": "search",
+        "query": "test research question"
+      },
+      {
+        "action": "answer"
+      }
+    ],
+    "expected": "error",
+    "scenario": "invalid_citation",
+    "final_answer": "This answer refers to a nonexistent source [999]."
+  },
+  {
+    "id": "TC22",
+    "name": "Page fetch raises an error",
+    "question": "Explain a topic using available sources.",
+    "decisions": [
+      {
+        "action": "search",
+        "query": "test research question"
+      },
+      {
+        "action": "fetch",
+        "url": "https://example.com/source-1"
+      },
+      {
+        "action": "answer"
+      }
+    ],
+    "expected": "answer",
+    "scenario": "fetch_failure",
+    "final_answer": "This is a source-grounded answer [1]."
+  },
+  {
+    "id": "TC23",
+    "name": "Page fetch returns empty content",
+    "question": "Explain a topic using available sources.",
+    "decisions": [
+      {
+        "action": "search",
+        "query": "test research question"
+      },
+      {
+        "action": "fetch",
+        "url": "https://example.com/source-1"
+      },
+      {
+        "action": "answer"
+      }
+    ],
+    "expected": "answer",
+    "scenario": "empty_fetch",
+    "final_answer": "This is a source-grounded answer [1]."
+  },
+  {
+    "id": "TC24",
+    "name": "Agent requests an unknown source URL",
+    "question": "Explain a topic.",
+    "decisions": [
+      {
+        "action": "search",
+        "query": "test research question"
+      },
+      {
+        "action": "fetch",
+        "url": "https://unknown.example/not-discovered"
+      },
+      {
+        "action": "answer"
+      }
+    ],
+    "expected": "answer",
+    "scenario": "unknown_url",
+    "final_answer": "This is a source-grounded answer [1]."
+  }
+]
